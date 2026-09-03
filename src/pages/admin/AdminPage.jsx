@@ -139,10 +139,10 @@ const AdminPage = () => {
                         {project.title}
                       </td>
                       <td className="py-5 text-[#5c554e] text-xs tracking-wide pr-4 max-w-xs lg:max-w-md">
-                        {project.tech_stack ? (
+                        {project.technologies?.length ? (
                           <div className="flex flex-wrap gap-1.5">
-                            {project.tech_stack.split(',').map((tech, index) => (
-                              <Pill key={index} tone="clay">{tech.trim()}</Pill>
+                            {project.technologies.map((tech) => (
+                              <Pill key={tech} tone="clay">{tech}</Pill>
                             ))}
                           </div>
                         ) : (
@@ -207,10 +207,10 @@ const AdminPage = () => {
                   </div>
 
                   {/* Stack de badges responsives (ne cassent plus bizarrement) */}
-                  {project.tech_stack && (
+                  {project.technologies?.length > 0 && (
                     <div className="flex flex-wrap gap-1.5">
-                      {project.tech_stack.split(',').map((tech, index) => (
-                        <Pill key={index} tone="clay">{tech.trim()}</Pill>
+                      {project.technologies.map((tech) => (
+                        <Pill key={tech} tone="clay">{tech}</Pill>
                       ))}
                     </div>
                   )}

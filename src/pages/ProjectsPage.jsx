@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard.jsx';
 import Button from '../components/ui/Button';
 import Pagination from '../components/ui/Pagination';
 
-const PROJECTS_PER_PAGE = 6;
+const PROJECTS_PER_PAGE = 3;
 
 const ProjectsPage = () => {
   const [projects, setProjects] = useState([]);

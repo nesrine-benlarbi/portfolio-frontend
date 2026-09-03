@@ -5,10 +5,10 @@ const ProjectCard = ({ project }) => {
   const navigate = useNavigate();
 
   // Extraction des données au format MySQL
-  const { id, title, description, image_url, tech_stack, github_url, demo_url } = project;
+  const { id, title, description, image_url, github_url, demo_url } = project;
 
-  // Conversion de la chaîne en tableau
-  const technologies = tech_stack ? tech_stack.split(',').map(tech => tech.trim()) : [];
+  // L'API renvoie déjà un tableau, issu de la table de liaison project_technologies
+  const technologies = project.technologies ?? [];
 
   // Interception et Redirection forcée vers la page 404 (conservée proprement)
   const handleForced404Click = (e) => {

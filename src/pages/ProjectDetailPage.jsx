@@ -57,7 +57,8 @@ const ProjectDetailPage = () => {
     );
   }
 
-  const technologies = project.tech_stack ? project.tech_stack.split(',').map(t => t.trim()) : [];
+  // L'API renvoie déjà un tableau, issu de la table de liaison project_technologies
+  const technologies = project.technologies ?? [];
 
   // 3. ÉTAT DE SUCCÈS
   return (

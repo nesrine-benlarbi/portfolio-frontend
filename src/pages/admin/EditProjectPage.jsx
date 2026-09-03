@@ -26,7 +26,16 @@ const EditProjectPage = () => {
         const projectData = await apiFetch(`/projects/${id}`);
         // Si les données sont enveloppées dans un objet .data, on extrait, sinon on prend direct
         const cleanData = projectData?.data ? projectData.data : projectData;
-        reset(cleanData);
+
+        // L'API renvoie les technologies sous forme de tableau (relation N─N).
+        // Le champ de saisie attend une chaîne : on la reconstitue ici.
+        reset({
+          ...cleanData,
+          technologies: Array.isArray(cleanData.technologies)
+            ? cleanData.technologies.join(', ')
+            : '',
+          category: cleanData.category ?? '',
+        });
       } catch (err) {
         setServerError(err.message);
       } finally {
