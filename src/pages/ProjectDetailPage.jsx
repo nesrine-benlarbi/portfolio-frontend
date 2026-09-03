@@ -143,27 +143,27 @@ const ProjectDetailPage = () => {
               <div className="flex flex-col items-start space-y-4 text-[11px] font-sans font-bold uppercase tracking-widest">
                 
                 {project.github_url && (
-                  <button 
-                    type="button"
-                    /* 🎯 Action radicale : Le clic déclenche immédiatement le routeur vers une route inconnue pour forcer l'affichage de ta page 404 */
-                    onClick={() => navigate('/route-invalide-test-404')}
-                    className="text-[#2e2a25] hover:text-[#2c3e2b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2c3e2b] rounded transition-colors duration-300 relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#2c3e2b] hover:after:w-full after:transition-all after:duration-300 cursor-pointer text-left bg-transparent border-none p-0 uppercase tracking-widest font-bold"
-                    title="Tester la redirection vers la page d'erreur"
+                  <a
+                    href={project.github_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#2e2a25] hover:text-[#2c3e2b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2c3e2b] rounded transition-colors duration-300 relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#2c3e2b] hover:after:w-full after:transition-all after:duration-300 uppercase tracking-widest font-bold"
+                    aria-label={`Ouvrir le dépôt GitHub du projet ${project.title} (nouvel onglet)`}
                   >
                     Dépôt GitHub
-                  </button>
+                  </a>
                 )}
-                
+
                 {project.demo_url && (
-                  <button 
-                    type="button"
-                    /* 🎯 Action identique pour l'application live */
-                    onClick={() => navigate('/route-invalide-test-404')}
-                    className="text-[#2c3e2b] hover:text-[#1b261a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2c3e2b] rounded transition-colors duration-300 relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#1b261a] hover:after:w-full after:transition-all after:duration-300 cursor-pointer text-left bg-transparent border-none p-0 uppercase tracking-widest font-bold"
-                    title="Tester la redirection vers la page d'erreur"
+                  <a
+                    href={project.demo_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#2c3e2b] hover:text-[#1b261a] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2c3e2b] rounded transition-colors duration-300 relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#1b261a] hover:after:w-full after:transition-all after:duration-300 uppercase tracking-widest font-bold"
+                    aria-label={`Visiter la version en ligne du projet ${project.title} (nouvel onglet)`}
                   >
                     Application Live
-                  </button>
+                  </a>
                 )}
                 
               </div>

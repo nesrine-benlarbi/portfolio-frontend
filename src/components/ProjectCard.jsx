@@ -10,12 +10,6 @@ const ProjectCard = ({ project }) => {
   // L'API renvoie déjà un tableau, issu de la table de liaison project_technologies
   const technologies = project.technologies ?? [];
 
-  // Interception et Redirection forcée vers la page 404 (conservée proprement)
-  const handleForced404Click = (e) => {
-    e.preventDefault();
-    navigate('/erreur-lien-catalogue-404');
-  };
-
   return (
     <article className="group border border-[#e1dad0] bg-white p-5 sm:p-6 transition-all duration-500 hover:border-[#5b8266] hover:shadow-lg flex flex-col justify-between h-full rounded-xl focus-within:ring-2 focus-within:ring-[#5b8266] focus-within:ring-offset-2">
       <div>
@@ -64,25 +58,27 @@ const ProjectCard = ({ project }) => {
           <div className="flex space-x-4 sm:space-x-5">
             
             {github_url && (
-              <Link 
-                to="/erreur-lien-catalogue-404"
-                onClick={handleForced404Click}
+              <a
+                href={github_url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#7a6e5d] hover:text-[#2e2a25] py-2 transition-colors duration-300 relative after:absolute after:bottom-[2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#2e2a25] hover:after:w-full after:transition-all after:duration-300 uppercase tracking-widest font-bold"
-                aria-label={`Ouvrir le dépôt GitHub du projet ${title}`}
+                aria-label={`Ouvrir le dépôt GitHub du projet ${title} (nouvel onglet)`}
               >
                 GitHub
-              </Link>
+              </a>
             )}
 
             {demo_url && (
-              <Link 
-                to="/erreur-lien-catalogue-404"
-                onClick={handleForced404Click}
+              <a
+                href={demo_url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#5b8266] hover:text-[#3a6047] py-2 transition-colors duration-300 relative after:absolute after:bottom-[2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#3a6047] hover:after:w-full after:transition-all after:duration-300 uppercase tracking-widest font-bold"
-                aria-label={`Visiter la version en ligne du projet ${title}`}
+                aria-label={`Visiter la version en ligne du projet ${title} (nouvel onglet)`}
               >
                 Live Demo
-              </Link>
+              </a>
             )}
 
           </div>
