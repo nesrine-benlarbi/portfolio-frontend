@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Nesrine Benlarbi — L'Atelier">
   <title>Nesrine Benlarbi — L'Atelier</title>
 
-  <!-- Tuile arrondie, vert émeraude profond : même pastille que dans le pied de page -->
-  <rect width="64" height="64" rx="18" fill="#2c3e2b"/>
+  <!-- Le logo du site, repris à l'identique : le carré vert arrondi de la barre
+       de navigation et du pied de page. Le rayon garde le rapport de Tailwind
+       `rounded-xl` sur une pastille de 40 px, soit 12/40 — ici 19/64. -->
+  <rect width="64" height="64" rx="19" fill="#2c3e2b"/>
 
-  <!-- Monogramme « NB », tracé en lin. Les lettres sont dessinées et non
-       composées : une police ne serait pas garantie dans une favicon. -->
-  <g fill="none" stroke="#faf9f5" stroke-width="5" stroke-linejoin="miter" stroke-miterlimit="4">
-    <!-- N : jambage montant, diagonale, jambage montant -->
-    <path d="M12.5 46 V18 L27.5 46 V18"/>
-    <!-- B : hampe, panse haute, panse basse -->
-    <path d="M35 46 V18 H43 a7 7 0 0 1 0 14 H35"/>
-    <path d="M43.5 32 a7.5 7.5 0 0 1 0 14 H35"/>
-  </g>
+  <!-- « NB » composé en serif gras, comme sur le site (classe `font-serif`),
+       et non tracé en chemins : c'est ce qui garantit la ressemblance. -->
+  <text x="32" y="33"
+        text-anchor="middle" dominant-baseline="central"
+        font-family="Georgia, 'Times New Roman', Times, serif"
+        font-size="25" font-weight="700" letter-spacing="1.4"
+        fill="#fbfaf7">NB</text>
 </svg>
