@@ -66,8 +66,8 @@ const Footer = () => {
             <li>
               {/* ♿ RGAA (Critère 12.11) : Ajout d'un aria-label pour expliciter l'ouverture dans un nouvel onglet pour les synthèses vocales */}
               <a 
-                href="https://linkedin.com" 
-                target="_blank" 
+                href="https://www.linkedin.com/in/eglantine-u-303739314/"
+                target="_blank"
                 rel="noopener noreferrer" 
                 aria-label="Visiter mon profil LinkedIn (s'ouvre dans un nouvel onglet)"
                 className="hover:text-[#8c6239] hover:translate-x-0.5 transition-all inline-block relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8c6239] hover:after:w-full after:transition-all after:duration-300"
@@ -78,8 +78,8 @@ const Footer = () => {
             <li>
               {/* ♿ RGAA (Critère 12.11) : Même chose ici pour GitHub */}
               <a 
-                href="https://github.com" 
-                target="_blank" 
+                href="https://github.com/nesrine-benlarbi"
+                target="_blank"
                 rel="noopener noreferrer" 
                 aria-label="Voir mon profil GitHub (s'ouvre dans un nouvel onglet)"
                 className="hover:text-[#8c6239] hover:translate-x-0.5 transition-all inline-block relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-[#8c6239] hover:after:w-full after:transition-all after:duration-300"
