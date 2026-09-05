@@ -66,7 +66,7 @@ const Footer = () => {
             <li>
               {/* ♿ RGAA (Critère 12.11) : Ajout d'un aria-label pour expliciter l'ouverture dans un nouvel onglet pour les synthèses vocales */}
               <a 
-                href="https://www.linkedin.com/in/eglantine-u-303739314/"
+                href="https://www.linkedin.com/in/nesrine-b-303739314/"
                 target="_blank"
                 rel="noopener noreferrer" 
                 aria-label="Visiter mon profil LinkedIn (s'ouvre dans un nouvel onglet)"
