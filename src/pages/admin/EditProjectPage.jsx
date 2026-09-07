@@ -61,7 +61,7 @@ const EditProjectPage = () => {
     }
   };
 
-  // 3. TA FONCTION DE SUPPRESSION OPTIMISÉE ET INTÉGRÉE
+  // 3. Suppression du projet : archivage côté API, puis retour à la liste
   const confirmDelete = async () => {
     setConfirmOpen(false);
     try {

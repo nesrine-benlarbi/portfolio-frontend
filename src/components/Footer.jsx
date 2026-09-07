@@ -4,10 +4,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    /* ♿ RGAA : Changement de la couleur du texte de base pour garantir un contraste suffisant (texte plus sombre pour lisibilité) */
+    /* RGAA : Changement de la couleur du texte de base pour garantir un contraste suffisant (texte plus sombre pour lisibilité) */
     <footer className="bg-[#faf9f5] border-t border-[#e6e2da] text-[#1c281b] font-sans text-xs mt-24">
       
-      {/* 📱 RESPONSIVE : Le padding vertical passe de py-16 à py-12 sur mobile (py-12 md:py-16) pour économiser le défilement inutile */}
+      {/* RESPONSIVE : Le padding vertical passe de py-16 à py-12 sur mobile (py-12 md:py-16) pour économiser le défilement inutile */}
       <div className="max-w-5xl mx-auto px-6 py-12 md:py-16 flex flex-col md:flex-row justify-between gap-10 md:gap-4">
         
         {/* Colonne 1 : Concept simple */}
@@ -25,7 +25,7 @@ const Footer = () => {
               </span>
             </div>
           </div>
-          {/* ♿ RGAA : Passage du texte de text-gray-500 à text-[#4a5549] pour valider le taux de contraste de 4.5:1 exigé sur les petits textes */}
+          {/* RGAA : Passage du texte de text-gray-500 à text-[#4a5549] pour valider le taux de contraste de 4.5:1 exigé sur les petits textes */}
           <p className="text-[#4a5549] leading-relaxed text-[11px]">
             Développement d'applications web sur-mesure et gestion de bases de données. Un travail axé sur la clarté et la logique du code.
           </p>
@@ -33,7 +33,7 @@ const Footer = () => {
 
         {/* Colonne 2 : Les pages (Lien Connexion Supprimé) */}
         <div className="space-y-3 text-left w-full md:max-w-[200px]">
-          {/* ♿ RGAA : Titre de liste plus sombre pour le contraste */}
+          {/* RGAA : Titre de liste plus sombre pour le contraste */}
           <div className="font-semibold uppercase tracking-wider text-[#6b7264] text-[10px]">
             Navigation
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                 À propos
               </Link>
             </li>
-            {/* 🎯 Le lien de connexion a été retiré proprement d'ici */}
+            {/* Le lien de connexion a été retiré proprement d'ici */}
           </ul>
         </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
           <ul className="space-y-2 font-medium">
             <li>
-              {/* ♿ RGAA (Critère 12.11) : Ajout d'un aria-label pour expliciter l'ouverture dans un nouvel onglet pour les synthèses vocales */}
+              {/* RGAA (Critère 12.11) : Ajout d'un aria-label pour expliciter l'ouverture dans un nouvel onglet pour les synthèses vocales */}
               <a 
                 href="https://www.linkedin.com/in/nesrine-b-303739314/"
                 target="_blank"
@@ -76,7 +76,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              {/* ♿ RGAA (Critère 12.11) : Même chose ici pour GitHub */}
+              {/* RGAA (Critère 12.11) : Même chose ici pour GitHub */}
               <a 
                 href="https://github.com/nesrine-benlarbi"
                 target="_blank"
@@ -98,7 +98,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="border-t border-[#e6e2da] bg-[#f5f3ed]">
-        {/* 📱 RESPONSIVE : Alignement vertical centré sur mobile, horizontal espacé sur PC (text-center sm:text-left) */}
+        {/* RESPONSIVE : Alignement vertical centré sur mobile, horizontal espacé sur PC (text-center sm:text-left) */}
         <div className="max-w-5xl mx-auto px-6 h-auto sm:h-14 flex flex-col sm:flex-row items-center justify-between gap-3 text-[#525a4f] text-[11px] py-4 sm:py-0 text-center sm:text-left">
           <div>&copy; {currentYear} L'Atelier — Nesrine Benlarbi. Tous droits réservés.</div>
           <div className="font-medium tracking-widest text-[9px] uppercase text-[#6b7264]">

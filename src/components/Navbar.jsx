@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        {/* 🍔 BOUTON BURGER (Visible uniquement sur mobile - hidden md:flex) */}
+        {/* BOUTON BURGER (Visible uniquement sur mobile - hidden md:flex) */}
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
@@ -52,7 +52,7 @@ const Navbar = () => {
           <span className={`h-[2px] w-5 bg-[#2c3e2b] transition-all duration-300 ${isOpen ? '-rotate-45 translate-y-[-8px]' : ''}`} />
         </button>
 
-        {/* 💻 MENU ORDINATEUR (Caché sur mobile - hidden md:flex) */}
+        {/* MENU ORDINATEUR (Caché sur mobile - hidden md:flex) */}
         <div className="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-medium">
           <Link 
             to="/" 
@@ -92,7 +92,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* 📱 MENU MOBILE RÉTRACTABLE (S'ouvre sous la barre au clic) */}
+      {/* MENU MOBILE RÉTRACTABLE (S'ouvre sous la barre au clic) */}
       <div
         id="mobile-menu"
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-[#faf9f5] border-t border-[#e6e2da] ${

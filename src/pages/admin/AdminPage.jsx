@@ -103,7 +103,7 @@ const AdminPage = () => {
           </div>
         ) : (
           <div>
-            {/* 🖥️ VERSION TABLEAU : Visible UNIQUEMENT sur Ordinateur/Tablette (md:block) */}
+            {/* VERSION TABLEAU : Visible UNIQUEMENT sur Ordinateur/Tablette (md:block) */}
             <div className="hidden md:block overflow-x-auto">
               <table className="w-full border-collapse text-left font-sans" aria-label="Liste de contrôle et d'édition de vos projets">
                 <thead>
@@ -175,7 +175,7 @@ const AdminPage = () => {
               </table>
             </div>
 
-            {/* 📱 VERSION SMARTPHONE : Structure en List-Items empilés, visible UNIQUEMENT sur Mobile (md:hidden) */}
+            {/* VERSION SMARTPHONE : Structure en List-Items empilés, visible UNIQUEMENT sur Mobile (md:hidden) */}
             <div className="block md:hidden space-y-6" role="list" aria-label="Liste d'édition de vos projets (version mobile)">
               {paginatedProjects.map((project) => (
                 <article 

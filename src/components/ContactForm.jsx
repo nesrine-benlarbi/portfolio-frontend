@@ -56,7 +56,7 @@ const ContactForm = () => {
     )
   }
 
-  {/* 📱 RESPONSIVE : flex flex-col w-full sur le form pour cadenasser la largeur des enfants */ }
+  {/* RESPONSIVE : flex flex-col w-full sur le form pour cadenasser la largeur des enfants */ }
   <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col space-y-5" noValidate>
 
     {/* Boucle dynamique pour les inputs */}
@@ -66,7 +66,7 @@ const ContactForm = () => {
       const inputId = `contact-${field.name}`;
 
       return (
-        /* 📱 RESPONSIVE : Sécurité w-full block sur le conteneur du champ */
+        /* RESPONSIVE : Sécurité w-full block sur le conteneur du champ */
         <div key={field.name} className="w-full block flex flex-col space-y-1.5">
           <label htmlFor={inputId} className="text-[10px] uppercase tracking-widest text-[#8c6239] font-sans font-bold cursor-pointer">
             {field.label} <span className="text-rose-600" aria-hidden="true">*</span>
@@ -79,7 +79,7 @@ const ContactForm = () => {
             aria-invalid={hasError ? "true" : "false"}
             aria-describedby={hasError ? errorId : undefined}
 
-            /* ⚡ FORCE LA LARGEUR SANS PASSER PAR TAILWIND */
+            /* FORCE LA LARGEUR SANS PASSER PAR TAILWIND */
             style={{ width: '100%', minWidth: '0', boxSizing: 'border-box', display: 'block' }}
 
             className={`border bg-white rounded-md p-2.5 text-sm focus:outline-none transition-all focus:ring-1 ${hasError
@@ -99,7 +99,7 @@ const ContactForm = () => {
     })}
 
     {/* Champ Message (Textarea séparé) */}
-    {/* 📱 RESPONSIVE : Sécurité w-full block sur le conteneur du message */}
+    {/* RESPONSIVE : Sécurité w-full block sur le conteneur du message */}
     <div className="w-full block flex flex-col space-y-1.5">
       <label htmlFor="contact-message" className="text-[10px] uppercase tracking-widest text-[#8c6239] font-sans font-bold cursor-pointer">
         Votre Message <span className="text-rose-600" aria-hidden="true">*</span>
@@ -112,7 +112,7 @@ const ContactForm = () => {
         aria-invalid={errors.message ? "true" : "false"}
         aria-describedby={errors.message ? "error-message" : undefined}
 
-        /* ⚡ FORCE LA LARGEUR SANS PASSER PAR TAILWIND */
+        /* FORCE LA LARGEUR SANS PASSER PAR TAILWIND */
         style={{ width: '100%', minWidth: '0', boxSizing: 'border-box', display: 'block' }}
 
         className={`border bg-white rounded-md p-2.5 text-sm focus:outline-none transition-all resize-none focus:ring-1 ${errors.message

@@ -37,9 +37,9 @@ const ProjectsPage = () => {
   // 1. ÉTAT DE CHARGEMENT (Loading) - Style Poétique & Atelier Conservé
   if (loading) {
     return (
-      /* ♿ RGAA : role="status" + live polite pour informer les synthèses vocales du chargement asynchrone */
+      /* RGAA : role="status" + live polite pour informer les synthèses vocales du chargement asynchrone */
       <div className="max-w-7xl mx-auto mt-8 sm:mt-16 px-6 lg:px-10 text-center py-40" role="status" aria-live="polite">
-        {/* 🎨 CONTRASTE : text-[#7a6f5d] respecte le ratio d'accessibilité de 4.5:1 sur fond clair */}
+        {/* CONTRASTE : text-[#7a6f5d] respecte le ratio d'accessibilité de 4.5:1 sur fond clair */}
         <div className="inline-block animate-pulse text-[10px] uppercase tracking-[0.5em] text-[#7a6f5d] font-sans font-bold">
           Inventaire de l'Atelier en cours...
         </div>
@@ -50,7 +50,7 @@ const ProjectsPage = () => {
   // 2. ÉTAT D'ERREUR (Fallback si la navigation 404 échoue)
   if (error) {
     return (
-      /* ♿ RGAA : role="alert" pour notifier immédiatement l'utilisateur de l'échec du chargement */
+      /* RGAA : role="alert" pour notifier immédiatement l'utilisateur de l'échec du chargement */
       <div className="max-w-xl mx-auto mt-20 p-10 border border-rose-100 bg-rose-50/50 text-center rounded-xl" role="alert">
         <p className="text-[10px] uppercase tracking-[0.3em] font-sans font-bold text-rose-700 mb-4">
           Une erreur est survenue
@@ -72,7 +72,7 @@ const ProjectsPage = () => {
   };
 
   return (
-    /* 📱 RESPONSIVE : Marge haute réduite sur mobile (mt-8) et normale sur desktop (sm:mt-16) */
+    /* RESPONSIVE : Marge haute réduite sur mobile (mt-8) et normale sur desktop (sm:mt-16) */
     <div className="max-w-7xl mx-auto mt-8 sm:mt-16 px-6 lg:px-10 mb-20">
       
       {/* En-tête de la page neutre et professionnel */}
@@ -83,7 +83,7 @@ const ProjectsPage = () => {
         <h1 className="text-3xl lg:text-4xl font-serif font-bold tracking-wide text-[#2e2a25]">
           Projets réalisés
         </h1>
-        {/* 🎨 CONTRASTE : text-[#5c554c] assure une lisibilité impeccable pour les personnes malvoyantes */}
+        {/* CONTRASTE : text-[#5c554c] assure une lisibilité impeccable pour les personnes malvoyantes */}
         <p className="text-sm text-[#5c554c] font-sans max-w-xl leading-relaxed">
           Découvrez une sélection d'applications web et de solutions numériques développées pour répondre à différents besoins et secteurs d'activité.
         </p>
@@ -91,7 +91,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* Grille de projets responsive fluide, ou état vide si aucun projet publié */}
-      {/* ♿ RGAA : Ajout de rôles sémantiques pour la liste de composants */}
+      {/* RGAA : Ajout de rôles sémantiques pour la liste de composants */}
       {projects.length === 0 ? (
         <div className="text-center py-20 border border-dashed border-[#e1dad0] bg-[#fcfbfa] rounded-xl" role="status">
           <p className="text-sm text-[#7a7165] italic font-sans">Aucun projet publié pour le moment.</p>

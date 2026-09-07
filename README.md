@@ -1,10 +1,10 @@
 # Portfolio Client — Front-end (React & Tailwind)
 
-Ce dépôt contient le code source de l'interface utilisateur (Client) de votre portfolio de développeur. Conçue avec une approche esthétique "Chic & Tech", cette application React moderne communique de manière asynchrone avec l'API backend pour afficher vos réalisations et gérer l'ensemble des contenus via un espace d'administration sécurisé.
+Ce dépôt contient le code source de l'interface (client) de mon portfolio de développeuse web. Conçue avec une approche esthétique "Chic & Tech", cette application React moderne communique de manière asynchrone avec l'API backend pour afficher mes réalisations et gérer l'ensemble des contenus via un espace d'administration sécurisé.
 
 ---
 
-## ✨ Fonctionnalités majeures
+## Fonctionnalités majeures
 
 * **Navigation Dynamique (SPA) :** Routage fluide géré par `react-router-dom` avec un système de routes publiques et de routes privées protégées (`PrivateRoute`).
 * **Gestion Globale de l'Authentification :** Centralisation de l'état de connexion de l'admin grâce au mécanisme de Contexte React (`AuthContext` + `AuthProvider`) et persistance via le `localStorage`.
@@ -14,17 +14,17 @@ Ce dépôt contient le code source de l'interface utilisateur (Client) de votre 
 
 ---
 
-## 🛠️ Stack Technique
+## Stack technique
 
 * **Framework :** React 19
 * **Outil de Build :** Vite
-* **Routing :** React Router v6
+* **Routing :** React Router v7
 * **Gestion de formulaires :** React Hook Form
 * **Design & Styles :** Tailwind CSS v4
 
 ---
 
-## 📁 Structure des fichiers de l'interface
+## Structure des fichiers de l'interface
 
 Le projet s'organise autour de composants modulaires et d'une séparation claire des rôles :
 
@@ -39,3 +39,4 @@ portfolio-frontend/
 │   ├── App.jsx          # Arbre des routes et configuration des barrières de sécurité
 │   ├── main.jsx         # Point d'ancrage React de l'application
 │   └── index.css        # Directives globales de Tailwind CSS
+```

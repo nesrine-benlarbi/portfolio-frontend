@@ -64,7 +64,7 @@ const ProjectDetailPage = () => {
   return (
     <div className="max-w-6xl mx-auto mt-8 sm:mt-12 px-6 lg:px-10 mb-20">
       
-      {/* 🧭 Bouton Retour */}
+      {/* Bouton Retour */}
       <div className="mb-8">
         <button 
           type="button"
@@ -75,7 +75,7 @@ const ProjectDetailPage = () => {
         </button>
       </div>
 
-      {/* 👑 Titre global (Lecture en Z) */}
+      {/* Titre global (Lecture en Z) */}
       <header className="mb-10">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-wide text-[#2e2a25] mb-4">
           {project.title}
@@ -83,10 +83,10 @@ const ProjectDetailPage = () => {
         <div className="h-[2px] w-16 bg-[#c2a679] rounded-full" aria-hidden="true"></div>
       </header>
 
-      {/* 🏗️ Grille asymétrique */}
+      {/* Grille asymétrique */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         
-        {/* 🏢 COLONNE GAUCHE (Image + Histoire) */}
+        {/* COLONNE GAUCHE (Image + Histoire) */}
         <div className="lg:col-span-2 space-y-10">
           <div className="aspect-video bg-[#f7f5f0] border border-[#e1dad0] overflow-hidden relative rounded-xl shadow-sm">
             {project.image_url ? (
@@ -112,7 +112,7 @@ const ProjectDetailPage = () => {
           </article>
         </div>
 
-        {/* 📜 COLONNE DROITE (Fiche technique Sticky) */}
+        {/* COLONNE DROITE (Fiche technique Sticky) */}
         <aside className="lg:col-span-1 space-y-8 bg-[#faf9f5] border border-[#e6e2da] p-6 rounded-xl lg:sticky lg:top-6">
           
           {/* Section Technologies */}

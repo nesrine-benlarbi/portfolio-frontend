@@ -12,7 +12,7 @@ import HomePage from './pages/HomePage.jsx';
 import ProjectsPage from './pages/ProjectsPage.jsx';
 import ProjectDetailPage from './pages/ProjectDetailPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
-import NotFoundPage from './pages/NotFoundPage.jsx'; // 👈 AJOUT : Importation de ton travail d'artisan
+import NotFoundPage from './pages/NotFoundPage.jsx'; // Page 404 dédiée, affichée pour toute URL inconnue
 import AboutPage from "./pages/AboutPage";
 import AdminPage from './pages/admin/AdminPage.jsx';
 import CreateProjectPage from './pages/admin/CreateProjectPage.jsx';
@@ -35,7 +35,7 @@ function App() {
       {/* Titre d'onglet par page + focus clavier sur le contenu principal à chaque navigation */}
       <RouteAnnouncer />
 
-      {/* ♿ RGAA : lien d'évitement, invisible tant qu'il n'a pas le focus clavier */}
+      {/* RGAA : lien d'évitement, invisible tant qu'il n'a pas le focus clavier */}
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:bg-[#2c3e2b] focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:text-sm focus:font-medium focus:shadow-lg"
@@ -43,7 +43,7 @@ function App() {
         Aller au contenu principal
       </a>
 
-      {/* La Navbar (qui affiche maintenant ton logo typographique NB) */}
+      {/* Barre de navigation, avec le logo typographique NB */}
       <Navbar />
 
       {/* Le conteneur principal prend tout l'espace disponible */}
@@ -75,12 +75,12 @@ function App() {
             </PrivateRoute>
           } />
 
-          {/* 🔍 SÉCURITÉ 404 : Affichage de la pièce introuvable plutôt qu'une redirection brute */}
+          {/* SÉCURITÉ 404 : Affichage de la pièce introuvable plutôt qu'une redirection brute */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
 
-      {/* Ton nouveau Footer en harmonie avec ton identité de terrain */}
+      {/* Pied de page : contacts, liens externes et mentions */}
       <Footer />
       
     </div>

@@ -64,13 +64,13 @@ const LoginPage = () => {
           
           {/* Champ E-mail */}
           <div className="flex flex-col space-y-1.5">
-            {/* 🎯 CORRECTION RGAA : Le htmlFor cible précisément l'id de l'input */}
+            {/* CORRECTION RGAA : Le htmlFor cible précisément l'id de l'input */}
             <label htmlFor="email" className="text-[10px] uppercase tracking-widest text-[#a39683] font-sans font-bold cursor-pointer">
               Adresse e-mail
             </label>
             <input
               type="email"
-              id="email" /* 🎯 AJOUT DE L'ID UNIQUE REQUIS */
+              id="email" /* id unique, cible du htmlFor du label */
               {...register('email', { 
                 required: "L'adresse e-mail est requise",
                 pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: "Format d'e-mail invalide" }
@@ -92,14 +92,14 @@ const LoginPage = () => {
 
           {/* Champ Mot de passe */}
           <div className="flex flex-col space-y-1.5">
-            {/* 🎯 CORRECTION RGAA : Le htmlFor cible précisément l'id de l'input */}
+            {/* CORRECTION RGAA : Le htmlFor cible précisément l'id de l'input */}
             <label htmlFor="password" className="text-[10px] uppercase tracking-widest text-[#a39683] font-sans font-bold cursor-pointer">
               Mot de passe
             </label>
             <div className="relative">
               <input
                 type={showPassword ? "text" : "password"}
-                id="password" /* 🎯 AJOUT DE L'ID UNIQUE REQUIS */
+                id="password" /* id unique, cible du htmlFor du label */
                 {...register('password', { required: "Le mot de passe est requis" })}
                 autoComplete="new-password"
                 className={`w-full border rounded-md p-2.5 pr-10 text-sm bg-[#faf9f5] focus:outline-none focus:bg-white transition-all ${

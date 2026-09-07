@@ -5,13 +5,13 @@ const NotFoundPage = () => {
   const navigate = useNavigate();
 
   return (
-    /* ♿ RGAA : pas de <main> ici — celui d'App.jsx fait déjà office de repère unique de la page */
+    /* RGAA : pas de <main> ici — celui d'App.jsx fait déjà office de repère unique de la page */
     <div
       className="max-w-2xl mx-auto min-h-[75vh] flex flex-col items-center justify-center px-6 py-12 text-center"
     >
       <div className="space-y-6 sm:space-y-8 flex flex-col items-center w-full">
         
-        {/* 👁️ VISUALISATION DE L'ERREUR : Enorme 404 hautement contrasté et lisible */}
+        {/* VISUALISATION DE L'ERREUR : Enorme 404 hautement contrasté et lisible */}
         <div 
           className="text-7xl sm:text-8xl lg:text-9xl font-serif font-black tracking-widest text-[#8c6239] select-none leading-none animate-fade-in"
           aria-hidden="true"
@@ -34,7 +34,7 @@ const NotFoundPage = () => {
           Le contenu que vous recherchez n'est pas répertorié à cette adresse ou a été déplacé vers une autre étagère de l'atelier.
         </p>
 
-        {/* 🏗️ BOUTONS RESPONSIVES : Côte à côte sur PC, empilés proprement sur Mobile */}
+        {/* BOUTONS RESPONSIVES : Côte à côte sur PC, empilés proprement sur Mobile */}
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-4 px-4">
           
           {/* Bouton Principal : Retour à l'accueil (Vert Sapin #2c3e2b robuste) */}
