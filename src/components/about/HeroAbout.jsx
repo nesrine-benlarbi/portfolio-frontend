@@ -19,7 +19,7 @@ export default function HeroAbout() {
           <Button to="/#contact" variant="primary">
             Me contacter
           </Button>
-          <Button href="/cv.pdf" download variant="outline">
+          <Button href="/cv.pdf" download="CV-Nesrine-Benlarbi.pdf" variant="outline">
             Télécharger mon CV
           </Button>
         </div>
